@@ -15,12 +15,12 @@ function create_tuner()
     tuner_file = "tuner_" * string(i)
     file_created = false
 
-    path = joinpath(@__DIR__, "code/tuners/")
+    path = joinpath(@__DIR__, "tuners/")
 
     if isdir(path)
         println("Directory already exists. Appending files to existing directory.")
     else
-        mkdir("code/tuners")
+        mkdir(path)
     end
 
     while !file_created
@@ -43,8 +43,8 @@ end
 
 function main()
     new_tuner = create_tuner()
-    tuner_path = joinpath(@__DIR__, new_tuner * ".jl")
-    modify_piece("components/interface.jl", tuner_path, new_tuner)
+    tuner_path = joinpath(@__DIR__, "tuners/") * new_tuner * ".jl"
+    modify_piece(joinpath(@__DIR__, "components/interface.jl"), tuner_path, new_tuner)
 end
 
 main()
