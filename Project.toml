@@ -1,5 +1,6 @@
 name = "MLJSynthesis"
 authors = ["Maja Gwozdz"]
+uuid = "1ab892db-040c-4235-a665-730259d2abaf"
 
 [deps]
 MLJTuning = "03970b2e-30c4-11ea-3135-d1576263f10f"
