@@ -1,6 +1,9 @@
 module MLJSynthesis
 
 ## METHOD EXPORT
+# defined in generator_script.jl
+export modify_piece
+export create_tuner
 
 ## METHOD IMPORT
 import MLJTuning

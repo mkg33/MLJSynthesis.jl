@@ -41,10 +41,10 @@ function create_tuner()
 
 end
 
-function main()
+#=function main()
     new_tuner = create_tuner()
     tuner_path = joinpath(@__DIR__, "tuners/") * new_tuner * ".jl"
     modify_piece(joinpath(@__DIR__, "components/interface.jl"), tuner_path, new_tuner)
 end
 
-main()
+main()=#
