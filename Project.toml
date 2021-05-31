@@ -1,2 +1,5 @@
+name = "MLJSynthesis"
+authors = ["Maja Gwozdz"]
+
 [deps]
 MLJTuning = "03970b2e-30c4-11ea-3135-d1576263f10f"
