@@ -15,12 +15,12 @@ function create_tuner()
     tuner_file = "tuner_" * string(i)
     file_created = false
 
-    path = "/Users/me/Desktop/Thesis_Informatik/Thesis/code/tuners/"
+    path = "code/tuners/"
 
     if isdir(path)
         println("Directory already exists. Appending files to existing directory.")
     else
-        mkdir("/Users/me/Desktop/Thesis_Informatik/Thesis/code/tuners")
+        mkdir("code/tuners")
     end
 
     while !file_created
@@ -43,8 +43,8 @@ end
 
 function main()
     new_tuner = create_tuner()
-    tuner_path = "/Users/me/Desktop/Thesis_Informatik/Thesis/code/tuners/" * new_tuner * ".jl"
-    modify_piece("/Users/me/Desktop/Thesis_Informatik/Thesis/code/components/interface.jl", tuner_path, new_tuner)
+    tuner_path = "code/tuners/" * new_tuner * ".jl"
+    modify_piece("components/interface.jl", tuner_path, new_tuner)
 end
 
 main()

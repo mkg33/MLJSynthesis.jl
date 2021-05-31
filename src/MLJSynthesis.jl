@@ -2,9 +2,6 @@ module MLJSynthesis
 
 ## METHOD EXPORT
 
-
-
-
 ## METHOD IMPORT
 import MLJTuning
 using MLJTuning
