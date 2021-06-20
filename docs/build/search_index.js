@@ -1,0 +1,3 @@
+var documenterSearchIndex = {"docs":
+[{"location":"Tutorials/distributed_synthesis.html#Distributed-synthesis","page":"Distributed synthesis","title":"Distributed synthesis","text":"","category":"section"},{"location":"Tutorials/MLJ_integration.html#Integration-with-MLJ.jl","page":"Integration with MLJ.jl","title":"Integration with MLJ.jl","text":"","category":"section"},{"location":"Tutorials/basic_example.html#Basic-example","page":"Basic example","title":"Basic example","text":"","category":"section"},{"location":"index.html#MLJSynthesis.jl","page":"Introduction","title":"MLJSynthesis.jl","text":"","category":"section"},{"location":"API.html#API","page":"API","title":"API","text":"","category":"section"}]
+}

@@ -1,10 +1,10 @@
 # Generator script for synthesized tuners.
 
-function modify_piece(file_in, file_out, replace_with)
+function modify_piece(file_in, file_out, matched_string, replace_with)
     f_in = readlines(file_in)
     open(file_out, append=true) do io
         for line in f_in
-            write(io, replace(line, "\$TunerName\$" => replace_with))
+            write(io, replace(line, matched_string => replace_with))
             write(io, "\n")
         end
     end
